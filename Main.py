@@ -63,7 +63,7 @@ class Solution:
         It prints all the elements of list.
         """
         # write code here
-        return listt
+        print(listt)
 
 # Do not edit the following code      
 # Create an instance for LinkedList
