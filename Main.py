@@ -89,4 +89,4 @@ solution = Solution()
 # Pass first_list and second_list to addTwoNumbers, which returns a new linked list
 new_list = solution.addTwoNumbers(first_list, second_list)
 # Display the status of new_list
-solution.status()
+Status=solution.status(new_list)
