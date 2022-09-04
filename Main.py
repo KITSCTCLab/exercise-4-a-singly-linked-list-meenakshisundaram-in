@@ -47,15 +47,15 @@ class Solution:
         :return: returns the sum as a linked list
         """
         # Write code here
-        def string(listt):
+        def string(node):
             v=""
-            for x in listt:
-                i=str(x)
-                v+=i
+            while node!=None:
+                v+=str(node.data)
+                node=node.next
             return v
             
-        z=string(data_for_first_list)
-        j=string(data_for_second_list)
+        z=string(first_list.head)
+        j=string(second_list.head)
         
         listy=[]
         for x in list(str(int(z)+int(j))[::-1]):
