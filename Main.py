@@ -30,13 +30,8 @@ class LinkedList:
         """
         # Write code here
         new_node = Node(data)
-        if self.head is None:
-            self.head = new_node
-        else:
-           
-            monk = new_node
-            monk.next = self.head
-            self.head = monk
+        new_node.next = self.head
+        self.head=new_node
 
     
 
@@ -90,4 +85,4 @@ solution = Solution()
 # Pass first_list and second_list to addTwoNumbers, which returns a new linked list
 new_list = solution.addTwoNumbers(first_list, second_list)
 # Display the status of new_list
-Status = solution.status(new_list)
+print(new_list)
