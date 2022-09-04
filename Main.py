@@ -54,7 +54,9 @@ class Solution:
         for i in data_for_second_list:
             v+=str(i)
         listy=[]
-        for x in list(str(int(z)+int(v))[::-1]):
+        
+        result = str(eval("{}+{}".format(z,v)))
+        for x in result[::-1]:
             listy.append(int(x))
         return listy
         
