@@ -47,16 +47,18 @@ class Solution:
         :return: returns the sum as a linked list
         """
         # Write code here
-        z=""
-        v=""
-        for i in data_for_first_list:
-            z+=str(i)
-        for i in data_for_second_list:
-            v+=str(i)
-        listy=[]
+        def string(listt):
+            v=""
+            for x in listt:
+                i=str(x)
+                v+=i
+            return v
+            
+        z=string(data_for_first_list)
+        j=string(data_for_second_list)
         
-        result = str(eval("{}+{}".format(z,v)))
-        for x in result[::-1]:
+        listy=[]
+        for x in list(str(int(z)+int(j))[::-1]):
             listy.append(int(x))
         return listy
         
